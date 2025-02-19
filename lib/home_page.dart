@@ -6,6 +6,8 @@ import 'main.dart';
 class HomePage extends StatelessWidget {
   final MovieController controller = Get.find<MovieController>();
 
+   HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -95,10 +97,24 @@ class HomePage extends StatelessWidget {
                     items: [
                       "All",
                       "Action",
+                      "Adventure",
+                      "Animation",
                       "Comedy",
+                      "Crime",
+                      "Documentary",
                       "Drama",
+                      "Family",
+                      "Fantasy",
+                      "History",
                       "Horror",
-                      "Sci-Fi"
+                      "Music",
+                      "Mystery",
+                      "Romance",
+                      "Sci-Fi",
+                      "TV Movie",
+                      "Thriller",
+                      "War",
+                      "Western"
                     ]
                         .map((String category) => DropdownMenuItem<String>(
                       value: category,
